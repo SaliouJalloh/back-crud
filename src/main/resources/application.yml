@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: back-crud
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_employees?useSSL=false
+    username: postgres
+    password: test
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
