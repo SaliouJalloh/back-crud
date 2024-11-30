@@ -1,6 +1,5 @@
 package com.example.backcrud.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 
 @Builder
