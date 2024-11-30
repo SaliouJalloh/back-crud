@@ -1,13 +1,13 @@
 package com.example.backcrud.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.backcrud.model.enums.Gender;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.Date;
 
 @Getter
 @Setter
@@ -23,5 +23,13 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String email;
+    private Date birthday;
+
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
+    private String education;
+    private String company;
+    private int experience;
+    private int salary;
 
 }
